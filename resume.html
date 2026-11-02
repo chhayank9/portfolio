@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Chhayank Kadwe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #334155;
+      --accent: #0284c7;
+      --accent-dark: #0369a1;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: #f1f5f9;
+      color: var(--primary);
+      line-height: 1.45;
+      font-size: 10.5pt;
+      padding: 20px;
+    }
+
+    .toolbar {
+      max-width: 850px;
+      margin: 0 auto 15px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .toolbar-left {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--secondary);
+    }
+
+    .btn-print {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn-print:hover {
+      background: var(--accent-dark);
+    }
+
+    .btn-back {
+      color: var(--secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-back:hover {
+      color: var(--accent);
+    }
+
+    .resume-page {
+      max-width: 850px;
+      margin: 0 auto 20px auto;
+      background: var(--bg);
+      padding: 35px 45px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border-radius: 4px;
+    }
+
+    /* Header */
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 14px;
+      margin-bottom: 14px;
+      gap: 20px;
+    }
+
+    .header-text {
+      flex: 1;
+    }
+
+    .candidate-name {
+      font-size: 24pt;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--primary);
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .candidate-tagline {
+      font-size: 10.5pt;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 6px;
+      letter-spacing: 0.2px;
+    }
+
+    .contact-info {
+      font-size: 9pt;
+      color: var(--secondary);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      line-height: 1.3;
+    }
+
+    .contact-info a {
+      color: var(--secondary);
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .candidate-photo {
+      width: 100px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Section Headings */
+    .section-title {
+      font-size: 11pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--primary);
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-top: 14px;
+      margin-bottom: 8px;
+    }
+
+    /* Summary */
+    .summary-text {
+      font-size: 9.5pt;
+      color: var(--secondary);
+      line-height: 1.45;
+      text-align: justify;
+    }
+
+    .summary-strengths {
+      font-size: 9pt;
+      margin-top: 6px;
+      color: var(--secondary);
+    }
+
+    .summary-strengths strong {
+      color: var(--primary);
+    }
+
+    /* Timeline / Items */
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 6px;
+      margin-bottom: 2px;
+    }
+
+    .item-title {
+      font-size: 10pt;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .item-date {
+      font-size: 8.8pt;
+      font-weight: 600;
+      color: #64748b;
+      font-family: var(--font-mono);
+    }
+
+    .item-subtitle {
+      display: flex;
+      justify-content: space-between;
+      font-size: 9pt;
+      color: var(--secondary);
+      font-style: italic;
+      margin-bottom: 4px;
+    }
+
+    .item-subtitle .location {
+      font-style: normal;
+      color: #64748b;
+    }
+
+    .bullet-list {
+      margin-left: 18px;
+      font-size: 9.2pt;
+      color: var(--secondary);
+      line-height: 1.4;
+    }
+
+    .bullet-list li {
+      margin-bottom: 3px;
+    }
+
+    .bullet-list strong {
+      color: var(--primary);
+    }
+
+    .tech-stack {
+      font-size: 8.8pt;
+      color: #475569;
+      margin-top: 3px;
+      margin-left: 18px;
+    }
+
+    .tech-stack strong {
+      color: var(--primary);
+    }
+
+    /* Skills Table */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 9pt;
+      margin-top: 4px;
+    }
+
+    .skills-table td {
+      padding: 3px 0;
+      vertical-align: top;
+    }
+
+    .skills-table .cat-name {
+      font-weight: 700;
+      width: 135px;
+      color: var(--primary);
+    }
+
+    .skills-table .cat-items {
+      color: var(--secondary);
+    }
+
+    /* Print Setup */
+    @media print {
+      body {
+        background: transparent;
+        padding: 0;
+      }
+
+      .toolbar {
+        display: none !important;
+      }
+
+      .resume-page {
+        margin: 0;
+        padding: 20px 30px;
+        box-shadow: none;
+        border-radius: 0;
+        max-width: 100%;
+      }
+
+      @page {
+        margin: 10mm;
+        size: A4;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top action bar for printing -->
+  <div class="toolbar">
+    <a href="index.html" class="btn-back">
+      <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+    </a>
+    <div class="toolbar-left">
+      Chhayank Kadwe • Resume with Photo
+    </div>
+    <button class="btn-print" onclick="window.print()">
+      <i class="fa-solid fa-print"></i> Print / Save as PDF
+    </button>
+  </div>
+
+  <div class="resume-page">
+    <!-- Header with Photo -->
+    <header class="header-container">
+      <div class="header-text">
+        <h1 class="candidate-name">Chhayank Kadwe</h1>
+        <div class="candidate-tagline">Embedded Systems · IoT · AI/ML · Electronics</div>
+        <div class="contact-info">
+          <span><i class="fa-solid fa-location-dot"></i> Nagpur, Maharashtra</span>
+          <span><i class="fa-solid fa-phone"></i> +91 8010522941</span>
+          <span><i class="fa-solid fa-envelope"></i> <a href="mailto:chhayankkadwe@gmail.com">chhayankkadwe@gmail.com</a></span>
+          <span><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/chhayankkadwe2005" target="_blank">linkedin.com/in/chhayankkadwe2005</a></span>
+          <span><i class="fa-brands fa-github"></i> <a href="https://github.com/chhayank9" target="_blank">github.com/chhayank9</a></span>
+        </div>
+      </div>
+      <img src="assets/images/chhayank-profile.png" alt="Chhayank Kadwe" class="candidate-photo" />
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary-text">
+        Final-year B.Tech Electronics & Telecommunication student (Minor in AI/ML) seeking an Embedded Systems / IoT internship. Hands-on experience with ESP8266 and ESP32 microcontrollers, sensor interfacing, custom PCB design and soldering, and cloud-connected monitoring using Firebase. Built an IoT-based predictive maintenance system, an ESP32 robotic arm, a local RAG chatbot using Ollama, and recreated a published wideband antenna in CST Studio Suite. Strong foundation in C and C++, with two completed internships in IoT and robotics.
+      </p>
+      <p class="summary-strengths">
+        <strong>Core strengths:</strong> Embedded firmware (C/C++) · Sensor interfacing · IoT cloud integration · PCB design & soldering · Predictive maintenance · RF / antenna simulation · RAG / LLM applications
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="section-title">Education</h2>
+      
+      <div class="item-header">
+        <span class="item-title">Yeshwantrao Chavan College of Engineering, Nagpur</span>
+        <span class="item-date">Aug. 2024 – June 2027</span>
+      </div>
+      <div class="item-subtitle">
+        <span>B.Tech in Electronics & Telecommunication Engineering (Final Year)</span>
+        <span class="location">Nagpur, India</span>
+      </div>
+      <ul class="bullet-list">
+        <li><strong>CGPA: 7.19 / 10</strong> | <strong>Minor degree</strong> in Artificial Intelligence & Machine Learning</li>
+      </ul>
+
+      <div class="item-header" style="margin-top: 8px;">
+        <span class="item-title">Government Polytechnic, Arvi</span>
+        <span class="item-date">Sep. 2021 – June 2024</span>
+      </div>
+      <div class="item-subtitle">
+        <span>Diploma in Electronics & Communication Engineering</span>
+        <span class="location">Arvi, India</span>
+      </div>
+      <ul class="bullet-list">
+        <li><strong>Percentage: 85%</strong> | Capstone project: <em>ESP32-Based Robotic Arm</em></li>
+      </ul>
+
+      <div class="item-header" style="margin-top: 8px;">
+        <span class="item-title">Gandhi City Public School, Pulgaon</span>
+        <span class="item-date">March 2021</span>
+      </div>
+      <div class="item-subtitle">
+        <span>CBSE – Class 10</span>
+        <span class="location">Pulgaon, India</span>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h2 class="section-title">Technical Skills</h2>
+      <table class="skills-table">
+        <tr>
+          <td class="cat-name">Programming</td>
+          <td class="cat-items">C, C++, Embedded C, Python, HTML</td>
+        </tr>
+        <tr>
+          <td class="cat-name">Microcontrollers</td>
+          <td class="cat-items">ESP8266 NodeMCU, ESP32, Arduino, STM32 Blue Pill</td>
+        </tr>
+        <tr>
+          <td class="cat-name">Protocols</td>
+          <td class="cat-items">UART, I2C, SPI, Wi-Fi</td>
+        </tr>
+        <tr>
+          <td class="cat-name">IoT & Cloud</td>
+          <td class="cat-items">Firebase Cloud, Sensor Integration, Remote Monitoring, Real-time Alerts, Predictive Maintenance</td>
+        </tr>
+        <tr>
+          <td class="cat-name">AI / ML</td>
+          <td class="cat-items">RAG, Vector Embeddings, Cosine Similarity Search, LLMs (Ollama, Gemma), NumPy, Streamlit, Random Forest (in progress)</td>
+        </tr>
+        <tr>
+          <td class="cat-name">Hardware</td>
+          <td class="cat-items">PCB Design (EasyEDA), Soldering, GPIO Interfacing, Motor Control, Temperature / Vibration / Current / Voltage Sensors</td>
+        </tr>
+        <tr>
+          <td class="cat-name">RF & Simulation</td>
+          <td class="cat-items">CST Studio Suite (antenna simulation), Reflection Coefficient, Gain, Radiation Pattern Analysis</td>
+        </tr>
+        <tr>
+          <td class="cat-name">Tools</td>
+          <td class="cat-items">Arduino IDE, EasyEDA, CST Studio Suite, VS Code, Microsoft Excel, PowerPoint, Word</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2 class="section-title">Projects</h2>
+
+      <!-- Project 1 -->
+      <div class="item-header">
+        <span class="item-title">IoT-Based Machine Health Monitoring & Predictive Maintenance System</span>
+        <span class="item-date">2025 – Present</span>
+      </div>
+      <div class="item-subtitle">
+        <span>Final-Year Project</span>
+        <span class="location">ESP8266 NodeMCU</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Developed an IoT-based machine health monitoring system on the ESP8266 NodeMCU, designed for industrial machines such as three-phase cutting machines and demonstrated on a cooler as the test machine.</li>
+        <li>Integrated current, voltage, temperature and vibration sensors to collect machine operating data for real-time condition monitoring.</li>
+        <li>Implemented Wi-Fi communication to send sensor readings to Firebase Cloud for remote data storage and monitoring.</li>
+        <li>Designed a monitoring dashboard displaying machine parameters and Normal / Warning / Failure-Likely status, with alerts for potential faults to help reduce unexpected downtime.</li>
+        <li>Designed a custom PCB in EasyEDA and hand-soldered the components for the sensor-interface circuit.</li>
+        <li>Working on a Random Forest model in Python to analyze sensor data and predict potential machine failures (in progress).</li>
+      </ul>
+      <div class="tech-stack">
+        <strong>Tech Stack:</strong> ESP8266 NodeMCU, Embedded C/C++, Arduino IDE, Firebase Cloud, Wi-Fi, EasyEDA, Python, Random Forest
+      </div>
+
+      <!-- Project 2 -->
+      <div class="item-header" style="margin-top: 10px;">
+        <span class="item-title">ESP32-Based Robotic Arm</span>
+        <span class="item-date">2024</span>
+      </div>
+      <div class="item-subtitle">
+        <span>Diploma Capstone Project</span>
+        <span class="location">ESP32</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Designed and developed an ESP32-based robotic arm for automated movement and object handling.</li>
+        <li>Programmed the ESP32 in Embedded C/C++ to control motor movements and coordinate arm positioning.</li>
+        <li>Integrated the microcontroller with motor-control hardware and electronic components for robotic arm operation.</li>
+        <li>Applied embedded systems programming, GPIO interfacing and hardware integration to implement robotic movement and gripping functionality.</li>
+      </ul>
+      <div class="tech-stack">
+        <strong>Tech Stack:</strong> ESP32, Embedded C/C++, GPIO, Motor Control, Robotics, Embedded Systems
+      </div>
+
+      <!-- Project 3 -->
+      <div class="item-header" style="margin-top: 10px;">
+        <span class="item-title">RAG-Based Q&A Chatbot</span>
+        <span class="item-date">AI / ML Project</span>
+      </div>
+      <div class="item-subtitle">
+        <span>Local Knowledge Retrieval Assistant</span>
+        <span class="location">Python, Streamlit</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Developed a Retrieval-Augmented Generation (RAG) chatbot using Python, Streamlit and Ollama to answer questions from a custom knowledge base.</li>
+        <li>Implemented vector embeddings with Ollama’s nomic-embed-text and cosine-similarity search using NumPy to retrieve the most relevant content for each question.</li>
+        <li>Integrated the Gemma LLM for context-based responses and built an interactive Streamlit chat interface.</li>
+      </ul>
+      <div class="tech-stack">
+        <strong>Tech Stack:</strong> Python, Streamlit, Ollama, nomic-embed-text, Gemma, NumPy, Vector Embeddings
+      </div>
+
+      <!-- Project 4 -->
+      <div class="item-header" style="margin-top: 10px;">
+        <span class="item-title">Star-Shaped Fractal Wideband Antenna</span>
+        <span class="item-date">CST Simulation</span>
+      </div>
+      <div class="item-subtitle">
+        <span>CST recreation of an IEEE ICORT 2021 paper (Rani et al.)</span>
+        <span class="location">CST Studio Suite</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Recreated a published star-shaped fractal monopole antenna with five triangular slots, FR-4 substrate and partial ground plane in CST Studio Suite, targeting the reported 1.82–4.69 GHz band.</li>
+        <li>Simulated reflection coefficient, gain and radiation pattern and compared the results with the published paper.</li>
+      </ul>
+      <div class="tech-stack">
+        <strong>Tech Stack:</strong> CST Studio Suite, Antenna Design, FR-4, Wideband / S-band, Fractal Geometry
+      </div>
+    </section>
+
+    <!-- Practical Training / Experience -->
+    <section>
+      <h2 class="section-title">Practical Training / Technical Exposure</h2>
+
+      <div class="item-header">
+        <span class="item-title">IoT Intern</span>
+        <span class="item-date">June 2025 – July 2025</span>
+      </div>
+      <div class="item-subtitle">
+        <span>SS Infotech Pvt. Ltd.</span>
+        <span class="location">India</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Completed an internship focused on Internet of Things (IoT) and embedded-system applications.</li>
+        <li>Worked with sensors, microcontrollers, hardware interfacing and IoT-based data collection.</li>
+        <li>Gained practical understanding of sensor integration, data communication and IoT monitoring systems.</li>
+      </ul>
+
+      <div class="item-header" style="margin-top: 8px;">
+        <span class="item-title">Robotics / Embedded Systems Intern</span>
+        <span class="item-date">June 2023 – July 2023</span>
+      </div>
+      <div class="item-subtitle">
+        <span>Doxpro Robotics Pvt. Ltd.</span>
+        <span class="location">India</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Gained practical exposure to robotics systems, embedded systems, microcontrollers and electronic components.</li>
+        <li>Worked with hardware interfacing, sensors, actuators and motor-control concepts used in robotic applications.</li>
+      </ul>
+    </section>
+
+    <!-- Training & Certifications -->
+    <section>
+      <h2 class="section-title">Training & Certifications</h2>
+      <ul class="bullet-list" style="margin-top: 4px;">
+        <li><strong>C++ / Object-Oriented Programming</strong> – Coursera <span style="float: right; font-family: var(--font-mono); font-size: 8.5pt; color: #64748b;">Oct. 2025 – Nov. 2025</span></li>
+        <li><strong>IoT Internship</strong> – SS Infotech Pvt. Ltd. <span style="float: right; font-family: var(--font-mono); font-size: 8.5pt; color: #64748b;">June 2025 – July 2025</span></li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>

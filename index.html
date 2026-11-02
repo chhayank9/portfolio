@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chhayank Kadwe - Embedded Systems, IoT, AI/ML & Electronics Portfolio. Final-Year B.Tech E&TC Student at YCCE Nagpur." />
+  <meta name="keywords" content="Chhayank Kadwe, Embedded Systems, IoT, ESP8266, ESP32, PCB Design, Robotics, AI/ML, CST Studio Suite, Portfolio" />
+  <meta name="author" content="Chhayank Kadwe" />
+  <title>Chhayank Kadwe | Embedded Systems, IoT & AI/ML Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+  <!-- Background Glow & Grid Canvas -->
+  <div class="bg-effects">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span><span class="logo-name">Chhayank</span><span class="logo-dot">.</span><span class="logo-accent">dev</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-close" id="nav-close"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Light and Dark Mode">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <a href="resume.html" target="_blank" class="btn btn-sm btn-outline nav-resume" title="View Printable Resume">
+          <i class="fa-solid fa-file-pdf"></i> Resume
+        </a>
+
+        <a href="mailto:chhayankkadwe@gmail.com" class="btn btn-sm btn-primary nav-cta">
+          <i class="fa-regular fa-paper-plane"></i> Let's Talk
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="hero section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span>
+            <span>Final-Year B.Tech E&TC (Minor in AI/ML) • Open to Internships</span>
+          </div>
+
+          <div class="hero-profile-header">
+            <div class="hero-avatar-wrap">
+              <img src="assets/images/chhayank-profile.png" alt="Chhayank Kadwe" class="hero-avatar-img" />
+              <div class="avatar-status-badge" title="Available for opportunities"></div>
+            </div>
+            <div>
+              <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Chhayank Kadwe</span>
+              </h1>
+              <div class="hero-role">
+                <span class="static-prefix">Specialized in</span>
+                <span class="typewriter-text" id="typewriter">Embedded Systems & IoT</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="hero-description">
+            Passionate hardware & firmware developer with hands-on expertise in <strong>ESP8266 & ESP32</strong> microcontrollers, custom <strong>PCB design</strong>, sensor interfacing, and cloud-connected telemetry via <strong>Firebase</strong>. Combining core electronics engineering with modern <strong>AI/ML & Local LLMs</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-microchip"></i> View Projects
+            </a>
+            <a href="resume.html" target="_blank" class="btn btn-secondary">
+              <i class="fa-solid fa-file-pdf"></i> View Resume
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-regular fa-envelope"></i> Contact Me
+            </a>
+            <a href="https://github.com/chhayank9" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/chhayankkadwe2005" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+
+          <div class="hero-quick-info">
+            <div class="quick-info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Nagpur, Maharashtra, India</span>
+            </div>
+            <div class="quick-info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>chhayankkadwe@gmail.com</span>
+            </div>
+            <div class="quick-info-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 8010522941</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="terminal-title">chhayank_firmware.cpp</span>
+              <span class="terminal-badge">ESP32 / ESP8266</span>
+            </div>
+            <div class="terminal-body">
+              <pre><code><span class="c-comment">// Engineering Connected Intelligence</span>
+<span class="c-keyword">#include</span> <span class="c-string">&lt;ESP8266WiFi.h&gt;</span>
+<span class="c-keyword">#include</span> <span class="c-string">&lt;FirebaseESP8266.h&gt;</span>
+
+<span class="c-keyword">struct</span> <span class="c-type">Engineer</span> {
+  <span class="c-type">const char*</span> name = <span class="c-string">"Chhayank Kadwe"</span>;
+  <span class="c-type">const char*</span> focus = <span class="c-string">"Embedded, IoT & AI/ML"</span>;
+  <span class="c-type">const char*</span> degree = <span class="c-string">"B.Tech E&TC (Minor AI/ML)"</span>;
+  <span class="c-type">bool</span> readyForHiring = <span class="c-keyword">true</span>;
+};
+
+<span class="c-type">void</span> <span class="c-func">setup</span>() {
+  Serial.<span class="c-func">begin</span>(115200);
+  initSensors(VIBRATION | CURRENT | TEMP);
+  WiFi.<span class="c-func">connectCloud</span>();
+  Serial.<span class="c-func">println</span>(<span class="c-string">"Ready to innovate!"</span>);
+}</code></pre>
+            </div>
+            <div class="terminal-footer">
+              <span class="status-indicator"></span>
+              <span>Firmware Status: Online & Monitoring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Overview</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Bridging physical hardware engineering and intelligent software architectures.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card">
+            <h3>Final-Year B.Tech Electronics & Telecommunication Student</h3>
+            <p>
+              I am pursuing my B.Tech in Electronics & Telecommunication Engineering at <strong>Yeshwantrao Chavan College of Engineering (YCCE), Nagpur</strong>, with an additional <strong>Minor degree in Artificial Intelligence & Machine Learning</strong>.
+            </p>
+            <p>
+              My journey started with a Diploma in E&CE from Government Polytechnic Arvi (85%), where I designed an automated ESP32 4-DoF robotic arm. I possess a strong foundation in <strong>C and C++</strong>, custom <strong>EasyEDA PCB layout</strong>, soldering, hardware debugging, and wireless IoT protocols (I2C, SPI, UART, Wi-Fi).
+            </p>
+            <p>
+              Recently, I engineered a full-scale IoT Predictive Maintenance system with real-time Firebase telemetry and Random Forest machine failure forecasting. In addition, I have explored RF engineering in <strong>CST Studio Suite</strong> (recreating published wideband fractal antennas) and created local <strong>RAG AI chatbots</strong> using Ollama & Gemma.
+            </p>
+
+            <div class="about-stats">
+              <div class="stat-card">
+                <span class="stat-number">2+</span>
+                <span class="stat-label">Industry Internships</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Core Engineering Projects</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">85%</span>
+                <span class="stat-label">Diploma Score (Govt Poly Arvi)</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">7.19</span>
+                <span class="stat-label">B.Tech CGPA (YCCE)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards-column">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-microchip"></i></div>
+              <div class="feature-info">
+                <h4>Embedded Firmware & Microcontrollers</h4>
+                <p>Extensive programming in C/C++ on ESP8266, ESP32, STM32 Blue Pill, and Arduino with bare-metal and RTOS paradigms.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+              <div class="feature-info">
+                <h4>IoT Telemetry & Cloud Integration</h4>
+                <p>Sensor integration (Current, Voltage, Temperature, Vibration), real-time Firebase telemetry, and interactive monitoring dashboards.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
+              <div class="feature-info">
+                <h4>AI / ML & Local LLM Applications</h4>
+                <p>Retrieval-Augmented Generation (RAG) with Ollama & Gemma, vector embeddings, and Random Forest predictive models.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-wave-square"></i></div>
+              <div class="feature-info">
+                <h4>PCB Design & RF Simulation</h4>
+                <p>Schematic capture and board layout in EasyEDA, hands-on SMD/THT soldering, and CST Studio Suite electromagnetic wave simulations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">A comprehensive toolkit spanning embedded firmware, hardware design, protocols, and AI.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-code"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-tag primary"><i class="fa-solid fa-c"></i> C</span>
+              <span class="skill-tag primary"><i class="fa-solid fa-terminal"></i> C++</span>
+              <span class="skill-tag highlight"><i class="fa-solid fa-microchip"></i> Embedded C</span>
+              <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Microcontrollers & Hardware -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-memory"></i>
+              <h3>Microcontrollers & Hardware</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-tag highlight">ESP8266 NodeMCU</span>
+              <span class="skill-tag highlight">ESP32</span>
+              <span class="skill-tag">Arduino UNO/Nano</span>
+              <span class="skill-tag">STM32 Blue Pill</span>
+              <span class="skill-tag">Custom PCB Design (EasyEDA)</span>
+              <span class="skill-tag">Hand Soldering</span>
+              <span class="skill-tag">GPIO Interfacing</span>
+              <span class="skill-tag">Motor Control (Drivers & Servos)</span>
+              <span class="skill-tag">Vibration / Temp / Current / Voltage Sensors</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Protocols & Communication -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-network-wired"></i>
+              <h3>Protocols & Networking</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-tag highlight">UART</span>
+              <span class="skill-tag highlight">I2C</span>
+              <span class="skill-tag highlight">SPI</span>
+              <span class="skill-tag highlight">Wi-Fi (802.11 b/g/n)</span>
+              <span class="skill-tag">Serial Communication</span>
+              <span class="skill-tag">HTTP / WebSockets</span>
+            </div>
+          </div>
+
+          <!-- Card 4: IoT & Cloud -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-cloud"></i>
+              <h3>IoT & Cloud Systems</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-tag highlight">Firebase Realtime DB</span>
+              <span class="skill-tag">Sensor Interfacing & Telemetry</span>
+              <span class="skill-tag">Remote Monitoring Dashboards</span>
+              <span class="skill-tag">Real-time Fault Alerts</span>
+              <span class="skill-tag">Predictive Maintenance</span>
+            </div>
+          </div>
+
+          <!-- Card 5: AI / Machine Learning -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-robot"></i>
+              <h3>AI / Machine Learning (Minor)</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-tag highlight">RAG Architecture</span>
+              <span class="skill-tag">Vector Embeddings (nomic-embed-text)</span>
+              <span class="skill-tag">Cosine Similarity Search</span>
+              <span class="skill-tag highlight">Local LLMs (Ollama, Gemma)</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Streamlit</span>
+              <span class="skill-tag">Random Forest (Predictive Modeling)</span>
+            </div>
+          </div>
+
+          <!-- Card 6: RF & Developer Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <h3>RF Simulation & Tools</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="skill-tag highlight">CST Studio Suite</span>
+              <span class="skill-tag">Reflection Coefficient (S11)</span>
+              <span class="skill-tag">Gain & Radiation Pattern Analysis</span>
+              <span class="skill-tag">EasyEDA</span>
+              <span class="skill-tag">Arduino IDE</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Git & GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Real-world systems spanning IoT telemetry, robotic automation, local AI, and antenna simulation.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="embedded">Embedded & IoT</button>
+          <button class="filter-btn" data-filter="ai">AI / ML</button>
+          <button class="filter-btn" data-filter="rf">RF Simulation</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: IoT Predictive Maintenance -->
+          <article class="project-card" data-category="embedded">
+            <div class="project-image-box">
+              <img src="assets/images/iot-health-monitoring.jpg" alt="IoT Health Monitoring PCB with ZMPT101B and ESP8266" class="project-thumb" />
+              <div class="project-image-badge"><i class="fa-solid fa-camera"></i> Actual Hardware Prototype</div>
+            </div>
+
+            <div class="project-header">
+              <div class="project-type-badge">
+                <i class="fa-solid fa-bolt"></i> Final-Year Capstone (2025 – Present)
+              </div>
+              <span class="project-chip">ESP8266 NodeMCU</span>
+            </div>
+            
+            <div class="project-content">
+              <h3 class="project-title">IoT-Based Machine Health Monitoring & Predictive Maintenance System</h3>
+              <p class="project-desc">
+                An industrial condition monitoring and fault prediction system designed for heavy machinery (e.g., three-phase cutting machines) and demonstrated live on a cooler test bench.
+              </p>
+
+              <ul class="project-highlights">
+                <li><i class="fa-solid fa-check"></i> <strong>Multi-Sensor Fusion:</strong> Real-time acquisition for Current, Voltage (ZMPT101B), Temperature, and Vibration.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Cloud Telemetry:</strong> Transmits live metrics over Wi-Fi to Firebase Cloud for storage and rapid diagnostics.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Alert Dashboard:</strong> Classifies system state into <em>Normal / Warning / Failure-Likely</em> to preemptively avert downtime.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Custom Hardware:</strong> Designed dedicated PCB in EasyEDA and hand-soldered the components for the sensor-interface circuit.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>ML Integration:</strong> Building a Random Forest classification model in Python to forecast early mechanical wear.</li>
+              </ul>
+
+              <div class="tech-stack-pills">
+                <span>ESP8266 NodeMCU</span>
+                <span>Embedded C/C++</span>
+                <span>Firebase Cloud</span>
+                <span>EasyEDA PCB</span>
+                <span>ZMPT101B</span>
+                <span>Python</span>
+                <span>Random Forest</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/chhayank9" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+              <span class="project-status-tag active-tag">In Progress / Final Year</span>
+            </div>
+          </article>
+
+          <!-- Project 2: ESP32 Robotic Arm -->
+          <article class="project-card" data-category="embedded">
+            <div class="project-image-box">
+              <img src="assets/images/esp32-robotic-arm.png" alt="ESP32-based robotic arm with servo motors" class="project-thumb" />
+              <div class="project-image-badge"><i class="fa-solid fa-robot"></i> Built Hardware</div>
+            </div>
+
+            <div class="project-header">
+              <div class="project-type-badge">
+                <i class="fa-solid fa-robot"></i> Diploma Capstone (2024)
+              </div>
+              <span class="project-chip">ESP32</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">ESP32-Based Robotic Arm</h3>
+              <p class="project-desc">
+                An automated multi-degree-of-freedom robotic manipulator engineered for precision pick-and-place operations and material handling.
+              </p>
+
+              <ul class="project-highlights">
+                <li><i class="fa-solid fa-check"></i> <strong>Kinematic Firmware:</strong> Programmed ESP32 in Embedded C/C++ to drive multi-axis motor movements and coordinate trajectory.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Hardware Actuation:</strong> Interfaced servo drivers, actuators, and power regulation circuits with micro-second responsiveness.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Gripper Mechanism:</strong> Integrated GPIO-controlled end-effector for stable object grasping.</li>
+              </ul>
+
+              <div class="tech-stack-pills">
+                <span>ESP32</span>
+                <span>Embedded C/C++</span>
+                <span>GPIO Control</span>
+                <span>Servo Motors</span>
+                <span>Robotics</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/chhayank9" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i> View Details
+              </a>
+              <span class="project-status-tag completed-tag">Completed (85% Score)</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Star-Shaped Fractal Antenna -->
+          <article class="project-card" data-category="rf">
+            <div class="project-image-box">
+              <img src="assets/images/cst-fractal-antenna.png" alt="Star-shaped fractal antenna simulated in CST Studio Suite" class="project-thumb" />
+              <div class="project-image-badge"><i class="fa-solid fa-wave-square"></i> CST Studio Simulation</div>
+            </div>
+
+            <div class="project-header">
+              <div class="project-type-badge">
+                <i class="fa-solid fa-satellite-dish"></i> RF / Antenna Design
+              </div>
+              <span class="project-chip">CST Studio Suite</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Star-Shaped Fractal Wideband Antenna</h3>
+              <p class="project-desc">
+                A full CST Studio Suite recreation and electromagnetic validation of a published IEEE ICORT 2021 research paper (Rani et al.).
+              </p>
+
+              <ul class="project-highlights">
+                <li><i class="fa-solid fa-check"></i> <strong>Fractal Geometry:</strong> Modeled a star-shaped fractal monopole with five triangular slots on an FR-4 dielectric substrate with partial ground plane.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Frequency Coverage:</strong> Targeted the 1.82 – 4.69 GHz wideband / S-band spectrum for modern wireless standards.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>EM Analysis:</strong> Simulated and validated reflection coefficient (S11), peak gain, and 3D radiation patterns matching published benchmarks.</li>
+              </ul>
+
+              <div class="tech-stack-pills">
+                <span>CST Studio Suite</span>
+                <span>Antenna Design</span>
+                <span>FR-4 Substrate</span>
+                <span>S-Band / Wideband</span>
+                <span>IEEE ICORT 2021</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/chhayank9" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-solid fa-file-lines"></i> Simulation Specs
+              </a>
+              <span class="project-status-tag completed-tag">Validated Paper</span>
+            </div>
+          </article>
+
+          <!-- Project 4: RAG Chatbot -->
+          <article class="project-card" data-category="ai">
+            <div class="project-image-box placeholder-visual">
+              <div class="ai-mockup-visual">
+                <div class="ai-mockup-header">
+                  <span class="ai-pill"><i class="fa-solid fa-robot"></i> Ollama + Gemma LLM</span>
+                  <span class="ai-pill"><i class="fa-solid fa-database"></i> nomic-embed-text</span>
+                </div>
+                <div class="ai-mockup-body">
+                  <div class="ai-msg user">&gt; Query: "What is the operating band of the fractal antenna?"</div>
+                  <div class="ai-msg bot">&gt; Vector Cosine Match: 1.82 – 4.69 GHz S-Band (Confidence: 98.4%)</div>
+                </div>
+              </div>
+              <div class="project-image-badge"><i class="fa-solid fa-brain"></i> Local RAG Architecture</div>
+            </div>
+
+            <div class="project-header">
+              <div class="project-type-badge">
+                <i class="fa-solid fa-brain"></i> AI / ML Project
+              </div>
+              <span class="project-chip">Python & LLM</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">RAG-Based Q&A Chatbot</h3>
+              <p class="project-desc">
+                A private, local Retrieval-Augmented Generation (RAG) assistant capable of answering questions grounded strictly in custom domain knowledge bases.
+              </p>
+
+              <ul class="project-highlights">
+                <li><i class="fa-solid fa-check"></i> <strong>Vector Similarity Search:</strong> Built semantic embeddings using Ollama's <code>nomic-embed-text</code> model and high-speed cosine similarity in NumPy.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Local LLM Inference:</strong> Connected the Gemma LLM through Ollama for hallucination-free, context-aware answering without external API costs.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Interactive Interface:</strong> Designed an intuitive, real-time chat interface using Streamlit.</li>
+              </ul>
+
+              <div class="tech-stack-pills">
+                <span>Python</span>
+                <span>Streamlit</span>
+                <span>Ollama</span>
+                <span>Gemma LLM</span>
+                <span>nomic-embed-text</span>
+                <span>NumPy</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/chhayank9" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+              <span class="project-status-tag completed-tag">Completed</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Internships Section -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Hands-on Background</span>
+          <h2 class="section-title">Practical Training & Internships</h2>
+          <p class="section-subtitle">Real-world experience in embedded devices, sensors, and robotics engineering.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class="fa-solid fa-wifi"></i></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">IoT Intern</h3>
+                  <h4 class="company-name">SS Infotech Pvt. Ltd. • <span class="loc">India</span></h4>
+                </div>
+                <span class="timeline-date">June 2025 – July 2025</span>
+              </div>
+              <ul class="timeline-duties">
+                <li>Completed an intensive internship focused on Internet of Things (IoT) architectures and embedded-system applications.</li>
+                <li>Worked hands-on with microcontrollers, hardware interfacing, sensors, and real-time data collection pipelines.</li>
+                <li>Gained practical understanding of sensor integration, network telemetry protocols, and cloud-based IoT monitoring.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>IoT</span>
+                <span>Embedded Systems</span>
+                <span>Microcontrollers</span>
+                <span>Data Communication</span>
+                <span>Sensor Interfacing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class="fa-solid fa-gears"></i></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Robotics / Embedded Systems Intern</h3>
+                  <h4 class="company-name">Doxpro Robotics Pvt. Ltd. • <span class="loc">India</span></h4>
+                </div>
+                <span class="timeline-date">June 2023 – July 2023</span>
+              </div>
+              <ul class="timeline-duties">
+                <li>Gained industrial exposure to robotics architectures, embedded systems, microcontrollers, and electronic components.</li>
+                <li>Interfaced hardware with sensors, motor drivers, actuators, and implemented motor-control logic for robotic prototypes.</li>
+                <li>Collaborated on troubleshooting circuit diagrams, signal integrity, and embedded firmware routines.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Robotics</span>
+                <span>Embedded C</span>
+                <span>Motor Control</span>
+                <span>Actuators</span>
+                <span>Hardware Debugging</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academics & Credentials</span>
+          <h2 class="section-title">Education & Certifications</h2>
+          <p class="section-subtitle">Academic degrees and specialized industry certifications.</p>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Education Column -->
+          <div class="edu-column">
+            <h3 class="column-title"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</h3>
+
+            <div class="edu-card">
+              <div class="edu-year">Aug. 2024 – June 2027 (Expected)</div>
+              <h4 class="edu-degree">B.Tech in Electronics & Telecommunication Engineering (Final Year)</h4>
+              <p class="edu-school">Yeshwantrao Chavan College of Engineering (YCCE), Nagpur, India</p>
+              <div class="edu-score-badge">CGPA: <strong>7.19 / 10</strong></div>
+              <p class="edu-minor"><i class="fa-solid fa-award"></i> <strong>Minor Degree:</strong> Artificial Intelligence & Machine Learning</p>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-year">Sep. 2021 – June 2024</div>
+              <h4 class="edu-degree">Diploma in Electronics & Communication Engineering</h4>
+              <p class="edu-school">Government Polytechnic, Arvi, India</p>
+              <div class="edu-score-badge">Percentage: <strong>85%</strong></div>
+              <p class="edu-minor"><i class="fa-solid fa-robot"></i> <strong>Capstone Project:</strong> ESP32-Based Robotic Arm</p>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-year">March 2021</div>
+              <h4 class="edu-degree">CBSE – Class 10</h4>
+              <p class="edu-school">Gandhi City Public School, Pulgaon, India</p>
+            </div>
+          </div>
+
+          <!-- Certifications Column -->
+          <div class="cert-column">
+            <h3 class="column-title"><i class="fa-solid fa-certificate"></i> Certifications & Training</h3>
+
+            <div class="cert-card">
+              <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="cert-content">
+                <span class="cert-date">Oct. 2025 – Nov. 2025</span>
+                <h4 class="cert-title">C++ / Object-Oriented Programming</h4>
+                <p class="cert-issuer">Coursera</p>
+                <p class="cert-desc">Advanced OOP paradigms, pointers, memory management, and data structures in modern C++.</p>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+              <div class="cert-content">
+                <span class="cert-date">June 2025 – July 2025</span>
+                <h4 class="cert-title">IoT Internship Certification</h4>
+                <p class="cert-issuer">SS Infotech Pvt. Ltd.</p>
+                <p class="cert-desc">Certified completion of industrial training in IoT microcontrollers and cloud telemetry.</p>
+              </div>
+            </div>
+
+            <!-- Core Strengths Summary -->
+            <div class="strengths-box">
+              <h4><i class="fa-solid fa-bullseye"></i> Core Strengths</h4>
+              <div class="strength-pills">
+                <span>Embedded Firmware (C/C++)</span>
+                <span>Sensor Interfacing</span>
+                <span>IoT Cloud Integration</span>
+                <span>PCB Design & Soldering</span>
+                <span>Predictive Maintenance</span>
+                <span>RF / Antenna Simulation</span>
+                <span>RAG / LLM Applications</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in collaborating on embedded systems, IoT devices, or hiring for internships? Reach out!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-card-text">
+                <span class="label">Email Address</span>
+                <a href="mailto:chhayankkadwe@gmail.com" class="val">chhayankkadwe@gmail.com</a>
+              </div>
+              <button class="copy-btn" id="copy-email-btn" title="Copy to clipboard">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-card-text">
+                <span class="label">Phone / WhatsApp</span>
+                <a href="tel:+918010522941" class="val">+91 8010522941</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-card-text">
+                <span class="label">Location</span>
+                <span class="val">Nagpur, Maharashtra, India</span>
+              </div>
+            </div>
+
+            <div class="social-links-grid">
+              <a href="https://github.com/chhayank9" target="_blank" rel="noopener noreferrer" class="social-tile">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+                <small>@chhayank9</small>
+              </a>
+              <a href="https://linkedin.com/in/chhayankkadwe2005" target="_blank" rel="noopener noreferrer" class="social-tile">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+                <small>in/chhayankkadwe2005</small>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Message Form -->
+          <div class="contact-form-container">
+            <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Embedded Systems / Internship Opportunity" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Hello Chhayank, I came across your portfolio..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <i class="fa-regular fa-paper-plane"></i> Send Message
+              </button>
+              <div class="form-feedback" id="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">&lt;</span><span class="logo-name">Chhayank</span><span class="logo-dot">.</span><span class="logo-accent">dev</span><span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-desc">Designed & Built for high-performance Embedded Systems, IoT & AI Engineering.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="resume.html" target="_blank">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/chhayank9" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/chhayankkadwe2005" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:chhayankkadwe@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; <span id="current-year"></span> Chhayank Kadwe. All rights reserved.</p>
+      <a href="#hero" class="back-to-top" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
